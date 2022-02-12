@@ -83,12 +83,12 @@
     <bigdataoss.version>3.0.0-SNAPSHOT</bigdataoss.version>
     <bigquery-connector.version>2.0.0-SNAPSHOT</bigquery-connector.version>
 
-    <google.api.grpc.proto-google-iam-v1.version>1.2.2</google.api.grpc.proto-google-iam-v1.version>
     <google.api-client.version>1.33.2</google.api-client.version>
     <google.api-client-libraries.version>1.32.1</google.api-client-libraries.version>
     <google.api-bigquery.version>v2-rev20220123-${google.api-client-libraries.version}</google.api-bigquery.version>
     <google.api-iamcredentials.version>v1-rev20211203-${google.api-client-libraries.version}</google.api-iamcredentials.version>
     <google.api-storage.version>v1-rev20211201-${google.api-client-libraries.version}</google.api-storage.version>
+    <google.api.grpc.proto-google-iam-v1.version>1.2.2</google.api.grpc.proto-google-iam-v1.version>
     <google.auth.version>1.4.0</google.auth.version>
     <google.auto-value.version>1.9</google.auto-value.version>
     <google.cloud-bigquerystorage.version>2.8.4</google.cloud-bigquerystorage.version>
@@ -98,6 +98,7 @@
     <google.gson.version>2.9.0</google.gson.version>
     <google.guava.version>31.0.1-jre</google.guava.version>
     <google.http-client.version>1.41.4</google.http-client.version>
+    <google.java-format.version>1.13.0</google.java-format.version>
     <google.oauth-client.version>1.33.0</google.oauth-client.version>
     <google.protobuf.version>3.19.4</google.protobuf.version>
     <grpc.version>1.44.0</grpc.version>
@@ -487,7 +488,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-jar-plugin</artifactId>
-          <version>3.2.0</version>
+          <version>3.2.2</version>
           <executions>
             <execution>
               <id>default-jar</id>
@@ -501,7 +502,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.8.1</version>
+          <version>3.9.0</version>
         </plugin>
         <plugin>
           <artifactId>maven-enforcer-plugin</artifactId>
@@ -522,7 +523,7 @@
         <plugin>
           <groupId>com.diffplug.spotless</groupId>
           <artifactId>spotless-maven-plugin</artifactId>
-          <version>2.18.0</version>
+          <version>2.20.2</version>
         </plugin>
         <plugin>
           <groupId>org.jacoco</groupId>
@@ -599,11 +600,6 @@
               <artifactId>auto-value</artifactId>
               <version>${google.auto-value.version}</version>
             </path>
-            <path>
-              <groupId>com.google.auto.service</groupId>
-              <artifactId>auto-service</artifactId>
-              <version>1.0.1</version>
-            </path>
           </annotationProcessorPaths>
         </configuration>
       </plugin>
@@ -627,7 +623,7 @@
               <on>fmt:on</on>
             </toggleOffOn>
             <googleJavaFormat>
-              <version>1.13.0</version>
+              <version>${google.java-format.version}</version>
             </googleJavaFormat>
           </java>
         </configuration>
