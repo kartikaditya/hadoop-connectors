@@ -41,7 +41,9 @@ public class BigQueryTableSchema {
     this.tableSchema = tableSchema;
   }
 
-  /** @see TableSchema#setFields(List) */
+  /**
+   * @see TableSchema#setFields(List)
+   */
   public BigQueryTableSchema setFields(List<BigQueryTableFieldSchema> bigQueryTableFields) {
     checkArgument(!bigQueryTableFields.isEmpty(), "Empty fields.");
     List<TableFieldSchema> fields = new ArrayList<>(bigQueryTableFields.size());

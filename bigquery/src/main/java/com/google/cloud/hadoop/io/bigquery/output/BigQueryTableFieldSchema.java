@@ -39,34 +39,46 @@ public class BigQueryTableFieldSchema {
     this.fieldSchema = fieldSchema;
   }
 
-  /** @see TableFieldSchema#getMode() */
+  /**
+   * @see TableFieldSchema#getMode()
+   */
   public String getMode() {
     return fieldSchema.getMode();
   }
 
-  /** @see TableFieldSchema#setMode(String) */
+  /**
+   * @see TableFieldSchema#setMode(String)
+   */
   public BigQueryTableFieldSchema setMode(String mode) {
     fieldSchema.setMode(mode);
     return this;
   }
 
-  /** @see TableFieldSchema#getName() */
+  /**
+   * @see TableFieldSchema#getName()
+   */
   public String getName() {
     return fieldSchema.getName();
   }
 
-  /** @see TableFieldSchema#setName(String) */
+  /**
+   * @see TableFieldSchema#setName(String)
+   */
   public BigQueryTableFieldSchema setName(String name) {
     fieldSchema.setName(name);
     return this;
   }
 
-  /** @see TableFieldSchema#getType() */
+  /**
+   * @see TableFieldSchema#getType()
+   */
   public String getType() {
     return fieldSchema.getType();
   }
 
-  /** @see TableFieldSchema#setType(String) */
+  /**
+   * @see TableFieldSchema#setType(String)
+   */
   public BigQueryTableFieldSchema setType(String type) {
     fieldSchema.setType(type);
     return this;

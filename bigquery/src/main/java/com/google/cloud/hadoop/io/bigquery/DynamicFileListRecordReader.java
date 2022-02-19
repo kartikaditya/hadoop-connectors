@@ -286,7 +286,9 @@ public class DynamicFileListRecordReader<K, V> extends RecordReader<K, V> {
     ++recordsRead;
   }
 
-  /** @return true if the next file is available for immediate usage. */
+  /**
+   * @return true if the next file is available for immediate usage.
+   */
   private boolean isNextFileReady() {
     return !fileQueue.isEmpty();
   }
