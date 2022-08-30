@@ -135,6 +135,8 @@ public class GoogleHadoopFileSystemConfigurationTest {
           put("fs.gs.storage.root.url", "https://storage.googleapis.com/");
           put("fs.gs.storage.service.path", "storage/v1/");
           put("fs.gs.working.dir", "/");
+          put("fs.gs.estimate.optimal.splits", false);
+          put("fs.gs.estimated.cluster.size.for.optimal.splits", 750);
         }
       };
 

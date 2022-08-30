@@ -1871,8 +1871,8 @@ public abstract class GoogleHadoopFileSystemBase extends FileSystem
    * chooses a start node index based on the file path and block offset, then does a round-robin
    * distribution across the virtual nodes in the circular fashion
    *
-   * <p>TODO: The current implementation tries to refer virtual nodes as random and possibly
-   * invalid IPs, this needs to be fixed
+   * <p>TODO: The current implementation tries to refer virtual nodes as random and possibly invalid
+   * IPs, this needs to be fixed
    *
    * <p>TODO: There is scope for making the distribution logic pluggable / extensible
    *
